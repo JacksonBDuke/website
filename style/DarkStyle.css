@@ -1,0 +1,164 @@
+/*
+Colors
+    #176B64
+    #212121
+    #FEFEFE
+    #30B8AD
+*/
+:root{
+    --main-bg-color: #212121;
+    --main-accent-color: #176B64;
+    --main-text-color: #FEFEFE;
+    --second-accent-color: #30B8AD;
+}
+
+*{
+    padding:0;
+    border:0;
+    margin:0;
+    color:var(--main-text-color);
+    background-color:var(--main-bg-color);
+    font-family: "Calibri";
+	font-family: "Century Gothic";
+}
+
+body{
+    font-size:15px;
+}
+
+/* Global */
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    bottom: 0;
+}
+
+/* Header */
+header *{
+    background: var(--main-accent-color);
+    text-align: center;
+}
+
+header{
+    width: 100%;
+    background: var(--main-accent-color);
+    color: var(--main-text-color);
+    min-height:70px;
+    border-bottom: 1px var(--main-text-color) solid;
+    margin-bottom: 10px;
+}
+
+#branding{
+    padding-bottom: 10px;
+}
+
+header nav *{
+    background: var(--main-text-color);
+    color: var(--main-accent-color);
+}
+
+header ul{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nav-multibox{
+    float: left;
+    width: 25%;
+    text-align: center;
+    background: var(--main-text-color);
+    color: var(--main-accent-color);
+}
+
+header .current{
+    background: var(--main-accent-color);
+    color: var(--main-text-color);
+}
+
+header li{
+    padding: 0;
+    display: inline;
+}
+
+header a{
+    text-decoration: none;
+}
+
+nav{
+    bottom: 0;
+}
+
+.current *{
+    background: var(--main-accent-color);
+    color: var(--main-text-color);
+}
+
+/* Footer */
+footer{
+    font-size:15px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+/* Page Columns */
+
+#left-col h3, #right-col h3, #left-col p, #right-col p{
+    padding-bottom: 15px;
+}
+
+#left-col{
+    float:left;
+    width: 40%;
+}
+
+#right-col{
+    float:right;
+    width: 40%;
+}
+
+/* For mobile */
+@media(max-width: 768px){
+    *{
+        float: none;
+        width: 100%;
+    }
+
+    #branding{
+        padding-top: 20px;
+        float: left;
+        width: 40%;
+    }
+
+    .nav-multibox{
+        float: none;
+        width: 100%;
+    }
+
+    header{
+        border: none;
+    }
+    
+    header nav{
+        float: right;
+        width: 40%;
+    }
+
+    header .container{
+        height: inherit;
+    }
+
+    #left-col{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    #right-col{
+        width: 100%;
+    }
+}
