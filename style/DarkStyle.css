@@ -129,11 +129,16 @@ footer{
 #left-col h3, #right-col h3{
     border-bottom: 1px var(--main-text-color) solid;
     margin-bottom: 15px;
+    background: var(--main-text-color);
+    color: var(--main-bg-color);
 }
 
 #left-col{
     float:left;
     width: 40%;
+    border-bottom: 1px var(--main-text-color) solid;
+    border-left: 1px var(--main-text-color) solid;
+    border-right: 1px var(--main-text-color) solid;
 }
 
 #right-col{
