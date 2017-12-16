@@ -122,8 +122,13 @@ footer{
 
 /* Page Columns */
 
-#left-col h3, #right-col h3, #left-col p, #right-col p{
+#left-col p, #right-col p{
     padding-bottom: 15px;
+}
+
+#left-col h3, #right-col h3{
+    border-bottom: 1px var(--main-text-color) solid;
+    margin-bottom: 15px;
 }
 
 #left-col{
@@ -169,7 +174,8 @@ footer{
 
     #left-col{
         width: 100%;
-        margin-bottom: 25px;
+        border-bottom: 5px var(--second-accent-color) solid;
+        margin-bottom: 15px;
     }
     #right-col{
         width: 100%;
