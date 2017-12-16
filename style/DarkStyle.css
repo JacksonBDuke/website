@@ -56,6 +56,7 @@ header{
 header nav *{
     background: var(--main-text-color);
     color: var(--main-accent-color);
+    min-height: 25px;
 }
 
 header ul{
@@ -83,6 +84,11 @@ header li{
 
 header a{
     text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover{
+    color: var(--second-accent-color);
 }
 
 nav{
@@ -96,15 +102,18 @@ nav{
 
 /* Footer */
 footer{
-    font-size:15px;
+    font-size:10px;
     text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    width: 100%;
+    padding-top: 0px;
+    padding-bottom: 5px;
     position: fixed;
+    width: 40%;
     bottom: 0;
     right: 0;
     left: 0;
+    transform: translate(75%);
+    border-top: 1px var(--second-accent-color) solid;
+    border-top-width: 25%;
 }
 
 /* Page Columns */
@@ -160,5 +169,12 @@ footer{
     }
     #right-col{
         width: 100%;
+    }
+
+    footer{
+        display: block;
+        position: relative;
+        width: 100%;
+        transform: none;
     }
 }
