@@ -12,13 +12,14 @@ Colors
     --second-accent-color: #30B8AD;
 }
 
+/* Global */
+
 *{
     padding:0;
     border:0;
     margin:0;
     color:var(--main-text-color);
     background-color:var(--main-bg-color);
-    font-family: "Calibri";
 	font-family: "Century Gothic";
 }
 
@@ -26,7 +27,6 @@ body{
     font-size:15px;
 }
 
-/* Global */
 .container{
     width: 80%;
     margin: auto;
@@ -52,6 +52,8 @@ header{
 #branding{
     padding-bottom: 10px;
 }
+
+/* Nav Items */
 
 header nav *{
     background: var(--main-text-color);
@@ -122,20 +124,17 @@ footer{
 
 /* Page Columns */
 
-#left-col p, #right-col p{
-    padding-bottom: 15px;
-}
 
-#left-col h3, #right-col h3{
-    border-bottom: 1px var(--main-text-color) solid;
-    margin-bottom: 15px;
-    background: var(--main-text-color);
-    color: var(--main-bg-color);
-}
 
 #left-col{
     float:left;
-    width: 40%;
+    width: 49%;
+}
+
+#left-col article{
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
     border-bottom: 1px var(--main-text-color) solid;
     border-left: 1px var(--main-text-color) solid;
     border-right: 1px var(--main-text-color) solid;
@@ -143,13 +142,22 @@ footer{
 
 #right-col{
     float:right;
-    width: 40%;
+    width: 49%;
+}
+
+#left-col article p, #right-col article p{
+    margin: 15px;
+}
+
+#left-col article h3, #right-col article h3{
+    border-bottom: 1px var(--main-text-color) solid;
+    background: var(--main-text-color);
+    color: var(--main-bg-color);
 }
 
 /* For mobile */
 @media(max-width: 768px){
     *{
-        float: none;
         width: 100%;
     }
 
@@ -182,8 +190,25 @@ footer{
         border-bottom: 5px var(--second-accent-color) solid;
         margin-bottom: 15px;
     }
-    #right-col{
+    #left-col *{
         width: 100%;
+        margin: auto;
+    }
+    #right-col{
+        margin: auto;
+        width: 100%;
+    }
+
+    #left-col article{
+        width: 100%;
+        overflow: auto;
+        margin-left: 0;
+        margin-right: 0;
+        border-right: 2px var(--main-text-color);
+    }
+
+    #left-col article p, #right-col article p{
+        width: auto;
     }
 
     footer{
