@@ -57,6 +57,8 @@ header nav *{
     background: var(--main-text-color);
     color: var(--main-accent-color);
     min-height: 25px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 header ul{
@@ -82,13 +84,15 @@ header li{
     display: inline;
 }
 
-header a{
+header button{
     text-decoration: none;
-    font-weight: bold;
+    width: 100%;
+    height: auto;
 }
 
-header a:hover{
+header button:hover{
     color: var(--second-accent-color);
+    background: #e1e1e1;
 }
 
 nav{
@@ -141,8 +145,8 @@ footer{
 
     #branding{
         padding-top: 20px;
-        float: left;
-        width: 40%;
+        float: none;
+        width: 100%;
     }
 
     .nav-multibox{
@@ -155,8 +159,8 @@ footer{
     }
     
     header nav{
-        float: right;
-        width: 40%;
+        float: none;
+        width: 100%;
     }
 
     header .container{
