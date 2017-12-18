@@ -46,7 +46,7 @@ header{
     color: var(--main-text-color);
     min-height:70px;
     border-bottom: 1px var(--main-text-color) solid;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 
 #branding{
@@ -108,6 +108,7 @@ nav{
 
 /* Footer */
 footer{
+    clear: both;
     font-size:10px;
     text-align: center;
     padding-top: 0px;
@@ -128,21 +129,12 @@ footer{
 
 #left-col{
     float:left;
-    width: 49%;
-}
-
-#left-col article{
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 15px;
-    border-bottom: 1px var(--main-text-color) solid;
-    border-left: 1px var(--main-text-color) solid;
-    border-right: 1px var(--main-text-color) solid;
+    width: 48%;
 }
 
 #right-col{
     float:right;
-    width: 49%;
+    width: 48%;
 }
 
 #left-col article p, #right-col article p{
@@ -150,6 +142,7 @@ footer{
 }
 
 #left-col article h3, #right-col article h3{
+    width: 100%;
     border-bottom: 1px var(--main-text-color) solid;
     background: var(--main-text-color);
     color: var(--main-bg-color);
@@ -158,7 +151,7 @@ footer{
 /* For mobile */
 @media(max-width: 768px){
     *{
-        width: 100%;
+        width: auto;
     }
 
     #branding{
@@ -185,28 +178,22 @@ footer{
         height: inherit;
     }
 
-    #left-col{
+    #left-col, #right-col{
         width: 100%;
-        border-bottom: 5px var(--second-accent-color) solid;
         margin-bottom: 15px;
     }
-    #left-col *{
-        width: 100%;
-        margin: auto;
-    }
-    #right-col{
-        margin: auto;
-        width: 100%;
-    }
 
-    #left-col article{
-        width: 100%;
+    #left-col article, #right-col article{
+        width: auto;
         overflow: auto;
-        margin-left: 0;
-        margin-right: 0;
-        border-right: 2px var(--main-text-color);
+        border: 1px solid white;
+        margin-bottom: 15px;
     }
 
+    #left-col{
+        border-bottom: 15px var(--second-accent-color) solid;
+    }
+    
     #left-col article p, #right-col article p{
         width: auto;
     }
