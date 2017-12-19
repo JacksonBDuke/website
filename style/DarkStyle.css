@@ -49,8 +49,9 @@ header{
     margin-bottom: 25px;
 }
 
-#branding{
+#branding *{
     padding-bottom: 10px;
+    font-weight: 100;
 }
 
 /* Nav Items */
