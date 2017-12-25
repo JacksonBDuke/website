@@ -7,6 +7,7 @@ Colors
 */
 :root{
     --main-bg-color: #212121;
+    --second-bg-color: #313131;
     --main-accent-color: #176B64;
     --main-text-color: #FEFEFE;
     --second-accent-color: #30B8AD;
@@ -107,8 +108,34 @@ nav{
     color: var(--main-text-color);
 }
 
+/* Section */
+
+section{
+    margin-bottom: 45px;
+}
+
 /* Footer */
 footer{
+    clear: both;
+    font-size:10px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    position: fixed;
+    width: auto;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+}
+
+footer p{
+    width: 40%;
+    border-top: 1px var(--second-accent-color) solid;
+    transform: translate(75%);
+}
+
+#fooderdiv{
     clear: both;
     font-size:10px;
     text-align: center;
@@ -126,11 +153,36 @@ footer{
 
 /* Page Columns */
 
+#center-col{
+    float: none;
+    width: auto;
+}
 
+#center-col *{
+    color: var(--main-text-color);
+    background: var(--second-bg-color);
+}
+
+#center-col article h3{
+    width: auto;
+    border-bottom: 1px var(--main-text-color) solid;
+    background: var(--main-text-color);
+    color: var(--main-bg-color);
+}
 
 #left-col{
     float:left;
     width: 48%;
+}
+
+#left-col *{
+    color: var(--main-text-color);
+    background: var(--second-bg-color);
+}
+
+#right-col *{
+    color: var(--main-text-color);
+    background: var(--main-text-color);
 }
 
 #right-col{
@@ -138,15 +190,66 @@ footer{
     width: 48%;
 }
 
-#left-col article p, #right-col article p{
-    margin: 15px;
+#right-col p{
+    color: var(--main-bg-color);
+    background: var(--main-text)
+}
+#right-col article h3{
+    width: auto;
+    color: var(--main-text-color);
+    background: var(--second-bg-color);
 }
 
-#left-col article h3, #right-col article h3{
-    width: 100%;
+#left-col article p, #right-col article p, #center-col article p{
+    padding: 15px;
+}
+
+#left-col article h3{
+    width: auto;
     border-bottom: 1px var(--main-text-color) solid;
     background: var(--main-text-color);
     color: var(--main-bg-color);
+}
+
+article h3{
+    padding-left: 5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+article{
+    margin-bottom: 15px;
+}
+
+/* Project Items */
+
+.project-pictures{
+    float: none;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+.picture-box{
+    float: left;
+    max-width: 45%;
+    /* border: 1px var(--main-text-color) solid; */
+    padding: 15px;
+    margin: auto;
+}
+
+.picture-box img{
+    display: block;
+    max-width: 100%;
+    align-content: center;
+    margin: auto;
+}
+
+.picture-box p{
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 }
 
 /* For mobile */
@@ -198,7 +301,7 @@ footer{
     #left-col article, #right-col article{
         width: auto;
         overflow: auto;
-        border: 1px solid white;
+        /* border: 1px solid var(--main-text-color); */
         margin-bottom: 15px;
     }
 
@@ -210,10 +313,19 @@ footer{
         width: auto;
     }
 
-    footer{
-        display: block;
-        position: relative;
-        width: 100%;
+    .picture-box{
+        float: none;
+        width: auto;
+        max-width: 100%;
+        border-top: 1px solid var(--main-text-color);
+    }
+
+    .picture-box img{
+        max-width: 100%;
+    }
+
+    footer p{
+        width: auto;
         transform: none;
     }
 }
