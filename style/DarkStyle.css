@@ -225,17 +225,16 @@ article{
 /* Project Items */
 
 .project-pictures{
-    float: none;
+    display: table-cell;
     align-self: center;
-    width: 100%;
+    width: auto;
     height: auto;
     overflow: hidden;
 }
 
 .picture-box{
-    float: left;
-    vertical-align: bottom;
-    max-width: 48%;
+    display: inline-block;
+    max-width: 47.77%;
     /* width: 45%; */
     /* border: 1px var(--main-text-color) solid; */
     margin: 1%;
@@ -263,7 +262,7 @@ article{
     }
 
     .pics2 .picture-box{
-        max-width: 47%;
+        max-width: 47.77%;
     }
 
     .pics3 .picture-box{
@@ -273,7 +272,6 @@ article{
     .pics4 .picture-box{
         max-width: 24%;
     }
-
 }
 
 /* For mobile */
