@@ -219,23 +219,26 @@ article h3{
 
 article{
     margin-bottom: 15px;
+    width: auto;
 }
 
 /* Project Items */
 
 .project-pictures{
     float: none;
-    width: auto;
+    align-self: center;
+    width: 100%;
     height: auto;
     overflow: hidden;
 }
 
 .picture-box{
     float: left;
-    max-width: 45%;
+    vertical-align: bottom;
+    max-width: 48%;
+    /* width: 45%; */
     /* border: 1px var(--main-text-color) solid; */
-    padding: 15px;
-    margin: auto;
+    margin: 1%;
 }
 
 .picture-box img{
@@ -252,8 +255,29 @@ article{
     width: 80%;
 }
 
+/* For large screens */
+
+@media only screen and (min-width: 2000px){
+    .pics1 .picture-box{
+        max-width: 100%;
+    }
+
+    .pics2 .picture-box{
+        max-width: 47%;
+    }
+
+    .pics3 .picture-box{
+        max-width: 31%;
+    }
+
+    .pics4 .picture-box{
+        max-width: 24%;
+    }
+
+}
+
 /* For mobile */
-@media(max-width: 768px){
+@media only screen and (max-width: 768px){
     *{
         width: auto;
     }
