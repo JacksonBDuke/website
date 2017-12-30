@@ -238,9 +238,9 @@ article{
 }
 
 .picture-box{
-    /*display: inline-block; */
-    float: left;
-    width: 48%;
+    display: inline-block;
+    /*float: left; */
+    width: 47.77%;
     /* width: 45%; */
     /* border: 1px var(--main-text-color) solid; */
     padding: 1%;
@@ -267,6 +267,19 @@ article{
 
 .image-button{
     width: 100%;
+}
+
+.solo-content{
+    padding: 1%;
+    width: 98%;
+}
+
+video{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    max-width: 100%;
 }
 
 /* For large screens */

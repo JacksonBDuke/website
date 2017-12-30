@@ -95,15 +95,19 @@
                         </p>
                         <div class="project-pictures pics2">
                             <div class="picture-box">
-                                <img src="content/images/karaokebot_demo_01.png" alt="KaraokeBot Demo 01">
+                                <button class="image-button" type="button" onclick="window.open('content/images/karaokebot_demo_01.png', '_blank')">
+                                    <img src="content/images/karaokebot_demo_01.png" alt="KaraokeBot Demo 01">
+                                </button>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis corrupti exercitationem consequatur, reprehenderit illo eveniet amet ipsum pariatur harum eum voluptate rem, assumenda voluptatibus praesentium. Quidem non optio inventore cupiditate.
+                                    Showing some of the commands you can use to interact with the bot.
                                 </p>
                             </div>
                             <div class="picture-box">
-                                <img src="content/images/karaokebot_demo_02.png" alt="KaraokeBot Demo 02">
+                                <button class="image-button" type="button" onclick="window.open('content/images/karaokebot_demo_02.png', '_blank')">
+                                    <img src="content/images/karaokebot_demo_02.png" alt="KaraokeBot Demo 02">
+                                </button>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis corrupti exercitationem consequatur, reprehenderit illo eveniet amet ipsum pariatur harum eum voluptate rem, assumenda voluptatibus praesentium. Quidem non optio inventore cupiditate.
+                                    Showing more of the commands used to interact with the bot.
                                 </p>
                             </div>
                         </div>  
@@ -112,11 +116,61 @@
                     <article id="tts_deckbuilder" class="article-b">
                         <h3>TTS DeckBuilder</h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis corrupti exercitationem consequatur, reprehenderit illo eveniet amet ipsum pariatur harum eum voluptate rem, assumenda voluptatibus praesentium. Quidem non optio inventore cupiditate.
+                            TTS Deck Builder is a small java application to aid in creating deck images for Tabletop Simuator.<br>
+                            Images are copied from the system clipboard, added to a list of stored images and then exported to a large tiled image with black borders. The grid output is 10x7 with the last (70th) position reserved for a card-back that is used for when the cards are in an opponent's hand.<br>
+                            For example purposes the images used will be solid colors.
+                            <br><br>
+                            This is a personal project that is still in development. You can check out the development on its GitHub page.
                         </p>
+                        <div class="solo-content">
+                            <video controls="controls" preload="none" onclick="this.play()">
+                                <source src="content/videos/tts_db_demo.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <p style="text-align: center;">
+                                A video demonstration of the application. 
+                            </p>
+                        </div>
                         <div class="project-pictures">
                             <div class="picture-box">
-                                
+                                <button class="image-button" type="button" onclick="window.open('content/images/tts_deckbuilder_demo_01.png', '_blank')">
+                                    <img src="content/images/tts_deckbuilder_demo_01.png" alt="">
+                                </button>
+                                <p>
+                                    The initial state of the application. No cards have been copied from the system clipboard so the "Current Card" space is blank. Also the "Export" button is disabled if the list of cards is empty while the "Add Card to Deck" button is disabled if there is no image in the "Current Card" area.
+                                </p>
+                            </div>
+                            <div class="picture-box">
+                                <button class="image-button" type="button" onclick="window.open('content/images/tts_deckbuilder_demo_02.png', '_blank')">
+                                    <img src="content/images/tts_deckbuilder_demo_02.png" alt="">
+                                </button>
+                                <p>
+                                    Example of the application state when cards have been added to the deck and there is also an image currently in the "Current Card" area waiting to be added to the deck or replaced by another "Grab from Clipboard" execution. 
+                                </p>
+                            </div>
+                            <div class="picture-box">
+                                <button class="image-button" type="button" onclick="window.open('content/images/tts_deckbuilder_demo_03.png', '_blank')">
+                                    <img src="content/images/tts_deckbuilder_demo_03.png" alt="">
+                                </button>
+                                <p>
+                                    After hitting the "Add Card to Deck" button, the images shift to the left, opening a space where "Current Card" is. 
+                                </p>
+                            </div>
+                            <div class="picture-box">
+                                <button class="image-button" type="button" onclick="window.open('content/images/tts_deckbuilder_demo_04.png', '_blank')">
+                                    <img src="content/images/tts_deckbuilder_demo_04.png" alt="">
+                                </button>
+                                <p>
+                                    Current Settings window. Window needs to be tweaked more, but has most of what I had in mind implemented. 
+                                </p>
+                            </div>
+                            <div class="picture-box">
+                                <button class="image-button" type="button" onclick="window.open('content/images/tts_deckbuilder_demo_05.png', '_blank')">
+                                    <img src="content/images/tts_deckbuilder_demo_05.png" alt="">
+                                </button>
+                                <p>
+                                    Example deck image that this application exports. 
+                                </p>
                             </div>
                         </div>
                     </article>
@@ -128,7 +182,38 @@
                         </p>
                         <div class="project-pictures">
                             <div class="picture-box">
-
+                                <button class="image-button" type="button" onclick="window.open('content/images/blockedoff_demo1.png', '_blank')">
+                                    <img src="content/images/blockedoff_demo1.png" alt="">
+                                </button>
+                                <p>
+                                    Introduction level which simply states the objective and how to play.<br>
+                                    No moving obstacles.<br>
+                                    In the next two levels the player must deal with Red enemies which follow a pre-determined path and will cause the player to start the level over if hit, and also neutral Green "moving wall" entities. These Green entities simply move in a pre-determined path and do no harm to the player character.
+                                </p>
+                            </div>
+                            <div class="picture-box">
+                                <button class="image-button" type="button" onclick="window.open('content/images/blockedoff_demo2.png', '_blank')">
+                                    <img src="content/images/blockedoff_demo2.png" alt="">
+                                </button>
+                                <p>
+                                    Purple enemies will follow the player using a simple follow script which also increases its movement-speed over time. The player character has a maximum speed, but the Purple enemies do not. Given time, the Purple enemies will catch up to the player.
+                                </p>
+                            </div>
+                            <div class="picture-box">
+                                <button class="image-button" type="button" onclick="window.open('content/images/blockedoff_demo3.png', '_blank')">
+                                    <img src="content/images/blockedoff_demo3.png" alt="">
+                                </button>
+                                <p>
+                                    Level 5 is the last level in the "tutorial" section of the game. This is also the first level where a player must deal with two different kinds of enemies at once.
+                                </p>
+                            </div>
+                            <div class="picture-box">
+                                <button class="image-button" type="button" onclick="window.open('content/images/blockedoff_demo4.png', '_blank')">
+                                    <img src="content/images/blockedoff_demo4.png" alt="">
+                                </button>
+                                <p>
+                                    At the moment the tutorial section of the game are the only levels created. Here we see a simple "You Win" level where the player can move around and knock the yellow particle blocks off the map.
+                                </p>
                             </div>
                         </div>
                     </article>
