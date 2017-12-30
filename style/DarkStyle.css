@@ -244,6 +244,7 @@ article{
     /* width: 45%; */
     /* border: 1px var(--main-text-color) solid; */
     padding: 1%;
+    vertical-align: top;
 }
 
 .picture-box img{
