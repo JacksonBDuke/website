@@ -97,6 +97,11 @@ header button{
 header button:hover{
     color: var(--second-accent-color);
     background: #e1e1e1;
+    cursor: pointer;
+}
+
+button:hover{
+    cursor: pointer;
 }
 
 nav{
@@ -227,24 +232,26 @@ article{
 .project-pictures{
     display: table-cell;
     align-self: center;
-    width: auto;
+    width: 100%;
     height: auto;
     overflow: hidden;
 }
 
 .picture-box{
-    display: inline-block;
-    max-width: 47.77%;
+    /*display: inline-block; */
+    float: left;
+    width: 48%;
     /* width: 45%; */
     /* border: 1px var(--main-text-color) solid; */
-    margin: 1%;
+    padding: 1%;
 }
 
 .picture-box img{
     display: block;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 100%;
-    align-content: center;
-    margin: auto;
+    align-self: center;
 }
 
 .picture-box p{
@@ -254,23 +261,31 @@ article{
     width: 80%;
 }
 
+.image-button:hover{
+    opacity: 0.5;
+}
+
+.image-button{
+    width: 100%;
+}
+
 /* For large screens */
 
 @media only screen and (min-width: 2000px){
     .pics1 .picture-box{
-        max-width: 100%;
+        width: 100%;
     }
 
     .pics2 .picture-box{
-        max-width: 47.77%;
+        width: 47.77%;
     }
 
     .pics3 .picture-box{
-        max-width: 31%;
+        width: 31.333%;
     }
 
     .pics4 .picture-box{
-        max-width: 24%;
+        width: 24%;
     }
 }
 
