@@ -249,6 +249,7 @@ h4{
     width: auto;
     color: var(--main-bg-color);
     background: var(--main-text);
+    border-bottom: 1px var(--second-bg-color) solid;
 }
 
 #left-col article p, #right-col article p, #center-col article p{
@@ -265,6 +266,7 @@ h4{
 
 #left-col article h4{
     width: auto;
+    border-bottom: 1px var(--main-text-color) solid;
 }
 
 article h3, article h4{
