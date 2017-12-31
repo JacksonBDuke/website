@@ -72,7 +72,7 @@ header ul{
 
 .nav-multibox{
     float: left;
-    width: 25%;
+    width: 33.3333333%;
     text-align: center;
     background: var(--main-text-color);
     color: var(--main-accent-color);
@@ -156,6 +156,46 @@ footer p{
     border-top-width: 25%;
 }
 
+/* Other Headers */
+
+h4{
+    width: 80%;
+}
+
+
+
+/* Sub-columns */
+
+.sub-left{
+    width: 50%;
+    float: left;
+    padding-bottom: 15px;
+}
+
+.sub-left ul{
+    display: block;
+    width: 70%;
+    margin: auto;
+}
+
+.sub-right{
+    width: 50%;
+    float: right;
+    padding-bottom: 15px;
+}
+
+.sub-right ul{
+    display: block;
+    width: 70%;
+    margin: auto;
+}
+
+.subdiv{
+    width: 90%;
+    margin: auto;
+    display: block;
+}
+
 /* Page Columns */
 
 #center-col{
@@ -205,8 +245,15 @@ footer p{
     background: var(--second-bg-color);
 }
 
+#right-col article h4{
+    width: auto;
+    color: var(--main-bg-color);
+    background: var(--main-text);
+}
+
 #left-col article p, #right-col article p, #center-col article p{
-    padding: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 #left-col article h3{
@@ -216,7 +263,11 @@ footer p{
     color: var(--main-bg-color);
 }
 
-article h3{
+#left-col article h4{
+    width: auto;
+}
+
+article h3, article h4{
     padding-left: 5px;
     padding-top: 1px;
     padding-bottom: 1px;
@@ -378,5 +429,12 @@ video{
     footer p{
         width: auto;
         transform: none;
+    }
+
+    .sub-left{
+        width: 100%;
+    }
+    .sub-right{
+        width: 100%;
     }
 }
