@@ -235,7 +235,7 @@ h4{
     width: 48%;
 }
 
-#right-col p{
+#right-col p, #right-col a{
     color: var(--main-bg-color);
     background: var(--main-text)
 }
