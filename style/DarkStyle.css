@@ -169,7 +169,7 @@ h4{
 .sub-left{
     width: 50%;
     float: left;
-    padding-bottom: 15px;
+    /* padding-bottom: 15px; */
 }
 
 .sub-left ul{
@@ -181,7 +181,7 @@ h4{
 .sub-right{
     width: 50%;
     float: right;
-    padding-bottom: 15px;
+    /* padding-bottom: 15px; */
 }
 
 .sub-right ul{
@@ -192,6 +192,12 @@ h4{
 
 .subdiv{
     width: 90%;
+    margin: auto;
+    display: block;
+}
+
+.subdivfull{
+    width: 100%;
     margin: auto;
     display: block;
 }
@@ -235,10 +241,15 @@ h4{
     width: 48%;
 }
 
-#right-col p, #right-col a{
+#right-col p, #right-col a, #right-col li{
     color: var(--main-bg-color);
     background: var(--main-text)
 }
+
+#right-col ul, #left-col ul{
+    width: 70%;
+}
+
 #right-col article h3{
     width: auto;
     color: var(--main-text-color);
@@ -334,6 +345,28 @@ video{
     margin-right: auto;
     width: auto;
     max-width: 100%;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+    padding-bottom: 0;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
 }
 
 /* For large screens */
@@ -435,7 +468,9 @@ video{
 
     .sub-left{
         width: 100%;
+        padding-bottom: 0;
     }
+
     .sub-right{
         width: 100%;
     }
