@@ -96,7 +96,8 @@
                             <p>
                                 A Node.js script that grabs new comments, updates, and Kickstarter projects for a defined profile page. This is run every few minutes using Linux crontab on my remote server.<br>
                                 A webhook is then used to push these new comments, updates, and projects to a Discord server.<br>
-                                Node.js packages including fs, request, and cheerio are utilized.
+                                Node.js packages including fs, request, and cheerio are utilized.<br><br>
+                                You can view a public version of this project on <a href="https://bitbucket.org/JacksonBDuke/ksgrabber_public/overview">BitBucket</a>.
                             </p>
                             <div class="project-pictures pics3">
                                 <div class="picture-box">
@@ -169,7 +170,7 @@
                             <div class="project-pictures">
                                 <div class="picture-box">
                                     <button class="image-button" type="button" onclick="window.open('content/images/tts_deckbuilder_demo_01.png', '_blank')">
-                                        <img src="content/images/tts_deckbuilder_demo_01.png" alt="">
+                                        <img src="content/images/tts_deckbuilder_demo_01.png" alt="Application demo at first start.">
                                     </button>
                                     <p>
                                         The initial state of the application. No cards have been copied from the system clipboard so the "Current Card" space is blank. Also the "Export" button is disabled if the list of cards is empty while the "Add Card to Deck" button is disabled if there is no image in the "Current Card" area.
@@ -177,7 +178,7 @@
                                 </div>
                                 <div class="picture-box">
                                     <button class="image-button" type="button" onclick="window.open('content/images/tts_deckbuilder_demo_02.png', '_blank')">
-                                        <img src="content/images/tts_deckbuilder_demo_02.png" alt="">
+                                        <img src="content/images/tts_deckbuilder_demo_02.png" alt="Application example with three solid color inputs.">
                                     </button>
                                     <p>
                                         Example of the application state when cards have been added to the deck and there is also an image currently in the "Current Card" area waiting to be added to the deck or replaced by another "Grab from Clipboard" execution. 
@@ -185,7 +186,7 @@
                                 </div>
                                 <div class="picture-box">
                                     <button class="image-button" type="button" onclick="window.open('content/images/tts_deckbuilder_demo_03.png', '_blank')">
-                                        <img src="content/images/tts_deckbuilder_demo_03.png" alt="">
+                                        <img src="content/images/tts_deckbuilder_demo_03.png" alt="Application example with three confirmed additions to image, current card being empty now that selection has been confirmed.">
                                     </button>
                                     <p>
                                         After hitting the "Add Card to Deck" button, the images shift to the left, opening a space where "Current Card" is. 
@@ -193,7 +194,7 @@
                                 </div>
                                 <div class="picture-box">
                                     <button class="image-button" type="button" onclick="window.open('content/images/tts_deckbuilder_demo_04.png', '_blank')">
-                                        <img src="content/images/tts_deckbuilder_demo_04.png" alt="">
+                                        <img src="content/images/tts_deckbuilder_demo_04.png" alt="Application example of settings window.">
                                     </button>
                                     <p>
                                         Current Settings window. Window needs to be tweaked more, but has most of what I had in mind implemented. 
@@ -201,7 +202,7 @@
                                 </div>
                                 <div class="picture-box">
                                     <button class="image-button" type="button" onclick="window.open('content/images/tts_deckbuilder_demo_05.png', '_blank')">
-                                        <img src="content/images/tts_deckbuilder_demo_05.png" alt="">
+                                        <img src="content/images/tts_deckbuilder_demo_05.png" alt="Example output.">
                                     </button>
                                     <p>
                                         Example deck image that this application exports. 
@@ -222,7 +223,7 @@
                             <div class="project-pictures">
                                 <div class="picture-box">
                                     <button class="image-button" type="button" onclick="window.open('content/images/blockedoff_demo1.png', '_blank')">
-                                        <img src="content/images/blockedoff_demo1.png" alt="">
+                                        <img src="content/images/blockedoff_demo1.png" alt="Example of first level.">
                                     </button>
                                     <p>
                                         Introduction level which simply states the objective and how to play.<br>
@@ -232,7 +233,7 @@
                                 </div>
                                 <div class="picture-box">
                                     <button class="image-button" type="button" onclick="window.open('content/images/blockedoff_demo2.png', '_blank')">
-                                        <img src="content/images/blockedoff_demo2.png" alt="">
+                                        <img src="content/images/blockedoff_demo2.png" alt="Example of purple enemy-type in level 4.">
                                     </button>
                                     <p>
                                         Purple enemies will follow the player using a simple follow script which also increases its movement-speed over time. The player character has a maximum speed, but the Purple enemies do not. Given time, the Purple enemies will catch up to the player.
@@ -240,7 +241,7 @@
                                 </div>
                                 <div class="picture-box">
                                     <button class="image-button" type="button" onclick="window.open('content/images/blockedoff_demo3.png', '_blank')">
-                                        <img src="content/images/blockedoff_demo3.png" alt="">
+                                        <img src="content/images/blockedoff_demo3.png" alt="Example of multiple enemies of different enemy-types in level 5.">
                                     </button>
                                     <p>
                                         Level 5 is the last level in the "tutorial" section of the game. This is also the first level where a player must deal with two different kinds of enemies at once. Currently the game only consists of this tutorial section.
@@ -248,7 +249,7 @@
                                 </div>
                                 <div class="picture-box">
                                     <button class="image-button" type="button" onclick="window.open('content/images/blockedoff_demo4.png', '_blank')">
-                                        <img src="content/images/blockedoff_demo4.png" alt="">
+                                        <img src="content/images/blockedoff_demo4.png" alt="The 'You Win' level.">
                                     </button>
                                     <p>
                                         Here we see a simple "You Win" level where the player can move around and knock the yellow particle blocks off the map.
@@ -261,12 +262,12 @@
                             <h3>This Website</h3>
                             <div class="subdiv">
                                 <p>
-                                    This website is written using basic HTML and CSS. Multiple revisions have been done, most recently a complete rewrite to better server mobile users. Eventually I would like to rewrite it using the Angular5 platform.
+                                    This website is written using basic HTML and CSS. Multiple revisions have been done, most recently a complete rewrite to better serve mobile users. Eventually I would like to rewrite it using the Angular5 platform. You can watch the progress of this website at its <a href="https://bitbucket.org/JacksonBDuke/website2/overview">BitBucket</a> repository.
                                 </p>
                                 <div class="project-pictures">
                                     <div class="picture-box">
                                         <button class="image-button" type="button" onclick="window.open('content/images/website/website_old_demo_01.png', '_blank')">
-                                            <img src="content/images/website/website_old_demo_01.png" alt="">
+                                            <img src="content/images/website/website_old_demo_01.png" alt="Screenshot of earlier version of website home-page as seen on wider screens.">
                                         </button>
                                         <p>
                                             The original home page of the website before mobile-focused rewrite.
@@ -274,7 +275,7 @@
                                     </div>
                                     <div class="picture-box">
                                         <button class="image-button" type="button" onclick="window.open('content/images/website/website_old_mobile_demo_01.png', '_blank')">
-                                            <img src="content/images/website/website_old_mobile_demo_01.png" alt="">
+                                            <img src="content/images/website/website_old_mobile_demo_01.png" alt="Screenshot of earlier version of website home-page as seen on mobile screens.">
                                         </button>
                                         <p>
                                             The original home page of the website before mobile-focused rewrite as would be seen on a smaller screen.
