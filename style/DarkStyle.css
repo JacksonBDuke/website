@@ -255,7 +255,7 @@ h4{
 }
 
 #right-col *{
-    color: var(--main-text-color);
+    color: var(--main-bg-color);
     background: var(--main-text-color);
 }
 
@@ -279,11 +279,18 @@ h4{
     background: var(--second-bg-color);
 }
 
-#right-col article h4{
+#right-col article h4, h5{
     width: auto;
     color: var(--main-bg-color);
     background: var(--main-text);
+}
+
+#right-col article h4{
     border-bottom: 1px var(--second-bg-color) solid;
+}
+
+#right-col article h5{
+    text-align: center;
 }
 
 #left-col article p, #right-col article p, #center-col article p{
@@ -303,7 +310,7 @@ h4{
     border-bottom: 1px var(--main-text-color) solid;
 }
 
-article h3, article h4{
+article h3, article h4, article h5{
     padding-left: 5px;
     padding-top: 1px;
     padding-bottom: 1px;
@@ -312,6 +319,29 @@ article h3, article h4{
 article{
     margin-bottom: 15px;
     width: auto;
+}
+
+.picture-gallary{
+    display: block;
+    align-self: center;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.picture-gallary .picture-box{
+    display: inline-block;
+    width: 47%;
+    padding: 1%;
+    vertical-align: top;
+}
+
+.ender{
+    padding-bottom: 0px;
+}
+
+.spacer{
+    padding-bottom: 15px;
 }
 
 /* Project Items */
@@ -327,7 +357,7 @@ article{
 .picture-box{
     display: inline-block;
     /*float: left; */
-    width: 47.77%;
+    width: 47%;
     /* width: 45%; */
     /* border: 1px var(--main-text-color) solid; */
     padding: 1%;
@@ -477,12 +507,23 @@ html[xmlns] .clearfix {
         width: auto;
     }
 
-    .picture-box{
+    .picture-gallary{
+        padding-bottom: 15px;
+    }
+    
+    .ender{
+        padding-bottom: 0px;
+    }
+    
+    .picture-box, .picture-gallary .picture-box{
         float: none;
-        width: auto;
+        width: 100%;
         max-width: 100%;
         border-top: 1px solid var(--main-text-color);
         padding-top: 15px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
     }
 
     .picture-box img{
