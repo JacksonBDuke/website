@@ -321,7 +321,7 @@ article{
     width: auto;
 }
 
-.picture-gallary{
+.picture-gallery{
     display: block;
     align-self: center;
     width: 100%;
@@ -329,7 +329,7 @@ article{
     overflow: hidden;
 }
 
-.picture-gallary .picture-box{
+.picture-gallery .picture-box{
     display: inline-block;
     width: 47%;
     padding: 1%;
@@ -507,7 +507,7 @@ html[xmlns] .clearfix {
         width: auto;
     }
 
-    .picture-gallary{
+    .picture-gallery{
         padding-bottom: 15px;
     }
     
@@ -515,7 +515,7 @@ html[xmlns] .clearfix {
         padding-bottom: 0px;
     }
     
-    .picture-box, .picture-gallary .picture-box{
+    .picture-box, .picture-gallery .picture-box{
         float: none;
         width: 100%;
         max-width: 100%;
