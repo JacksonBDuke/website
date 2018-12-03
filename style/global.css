@@ -30,6 +30,8 @@ body{
 
 .container{
     width: 80%;
+    display: grid;
+    grid-template-columns: 10fr 1fr 10fr;
     margin: auto;
     overflow: hidden;
     bottom: 0;
@@ -70,9 +72,14 @@ header ul{
     margin: 0 auto;
 }
 
+nav {
+    display: grid;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
 .nav-multibox{
-    float: left;
-    width: 33.3333333%;
     text-align: center;
     background: var(--main-text-color);
     color: var(--main-accent-color);
@@ -106,6 +113,8 @@ button:hover{
 
 nav{
     bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .current *{
@@ -244,11 +253,6 @@ h4{
     color: var(--main-bg-color);
 }
 
-#left-col{
-    float:left;
-    width: 48%;
-}
-
 #left-col *{
     color: var(--main-text-color);
     background: var(--second-bg-color);
@@ -257,11 +261,6 @@ h4{
 #right-col *{
     color: var(--main-bg-color);
     background: var(--main-text-color);
-}
-
-#right-col{
-    float:right;
-    width: 48%;
 }
 
 #right-col p, #right-col a, #right-col li{
@@ -458,9 +457,8 @@ html[xmlns] .clearfix {
         width: 100%;
     }
 
-    .nav-multibox{
-        float: none;
-        width: 100%;
+    .container {
+        grid-template-columns: 1fr;
     }
 
     header{
@@ -470,6 +468,12 @@ html[xmlns] .clearfix {
     header nav{
         float: none;
         width: 100%;
+    }
+
+    nav {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
     }
 
     header .nav-multibox{
